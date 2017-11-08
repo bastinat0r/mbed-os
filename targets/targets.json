@@ -3438,5 +3438,20 @@
         "device_name": "TMPM066FWUG",
         "detect_code": ["7011"],
         "release_versions": ["5"]
-    }
+    },
+	"DWM1000_STM32L443CC": {
+		"inherits": ["FAMILY_STM32"],
+		"core": "Cortex-M4F",
+		"extra_labels_add": ["STM32L4", "STM32L443xC", "STM32L443CC"],
+		"config": {
+			"clock_source": {
+				"help": "Mask value : USE_PLL_HSI | USE_PLL_MSI",
+				"value": "USE_PLL_MSI",
+				"macro_name": "CLOCK_SOURCE"
+			}
+		},
+		"macros_add": ["USB_STM_HAL"],
+		"device_has_add": ["ANALOGOUT", "LOWPOWERTIMER", "TRNG", "FLASH"],
+		"device_name": "STM32L443CC"
+	}
 }
