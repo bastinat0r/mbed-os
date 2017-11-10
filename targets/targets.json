@@ -3450,7 +3450,6 @@
 				"macro_name": "CLOCK_SOURCE"
 			}
 		},
-		"macros_add": ["USB_STM_HAL"],
 		"device_has_add": ["ANALOGOUT", "LOWPOWERTIMER", "TRNG", "FLASH"],
 		"device_name": "STM32L443CC"
 	}

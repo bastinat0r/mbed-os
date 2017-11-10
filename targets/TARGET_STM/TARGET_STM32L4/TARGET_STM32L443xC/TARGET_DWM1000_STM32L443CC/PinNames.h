@@ -110,26 +110,26 @@ typedef enum {
   D13         = PB_3,
 
   // Generic signals namings
-  LED1        = PB_0,
-  LED2        = PB_1,
-  LED3        = PB_1,
-  LED4        = PB_1,
+  LED1        = PB_3,
+  LED2        = PB_3,
+  LED3        = PB_3,
+  LED4        = PB_3,
   SERIAL_TX   = PA_2,
-  SERIAL_RX   = PA_3,
-  USBTX       = PA_9,
-  USBRX       = PA_10,
+  SERIAL_RX   = PA_15,
+  USBTX       = PA_2,
+  USBRX       = PA_15,
   I2C_SCL     = PB_6,
   I2C_SDA     = PB_7,
-  SPI_MOSI    = PA_7,
-  SPI_MISO    = PA_6,
-  SPI_SCK     = PA_5,
-  SPI_CS      = PA_4,
+  SPI_MOSI    = PB_5,
+  SPI_MISO    = PB_4,
+  SPI_SCK     = PB_3,
+  SPI_CS      = PA_11,
   PWM_OUT     = PB_0,
 
     //USB pins
     USB_DM = PA_11,
     USB_DP = PA_12,
-    USB_NOE = (int)0xFFFFFFFF,
+    USB_NOE = PA_13,
 
   // Not connected
   NC = (int)0xFFFFFFFF
