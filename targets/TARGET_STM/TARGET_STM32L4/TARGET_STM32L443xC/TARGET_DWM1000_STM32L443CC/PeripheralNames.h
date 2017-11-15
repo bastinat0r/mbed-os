@@ -51,7 +51,7 @@ typedef enum {
 } UARTName;
 
 #define STDIO_UART_TX  PA_2
-#define STDIO_UART_RX  PA_15
+#define STDIO_UART_RX  PA_3
 #define STDIO_UART     UART_2
 
 typedef enum {
