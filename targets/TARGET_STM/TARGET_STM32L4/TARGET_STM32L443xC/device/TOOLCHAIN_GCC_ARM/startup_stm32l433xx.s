@@ -109,9 +109,11 @@ LoopFillZerobss:
 /* Call the clock system intitialization function.*/
     bl  SystemInit
 /* Call static constructors */
-    bl __libc_init_array
+    //bl __libc_init_array
 /* Call the application's entry point.*/
-	bl	main
+//	bl	main
+  bl _start
+  bx  lr
 
 LoopForever:
     b LoopForever
